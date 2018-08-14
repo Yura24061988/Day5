@@ -18,8 +18,8 @@ namespace Task_3
         }
         static void Main(string[] args)
         {
-            int [] numbers = { 1, 23,10, 4, 5, 6, 6, 7, 7, 8, 8, 9, 9, 90 };
-            var sumf = from i in numbers where  i > 20 select i;
+            int [] numbers = { 1, 23,10, 4 };
+            var sumf = from i in numbers orderby  i select i;
             foreach(var i in sumf)
             Console.WriteLine(i);
         }
